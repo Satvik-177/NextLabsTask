@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pricing example for Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="boostr2.webp">
+    <script src="index.js"></script>
+    <style>
+        .p-2 {
+            text-decoration: none;
+            color: #222;
+            cursor: pointer;
+        }
+
+        .p-2:hover {
+            text-decoration: underline;
+        }
+
+        #subcontainer {
+            width: 90%;
+            margin: auto;
+            padding: 2em;
+        }
+
+        #para {
+            text-align: center;
+            font-size: larger;
+            margin-top: 1em;
+        }
+
+        .card-container {
+            height: auto;
+        }
+
+        #firstbutton
+         {
+            margin-top: 1em;
+            border: 1px solid rgb(64, 64, 246);
+            border-radius: 6px;
+            color: rgb(64, 64, 246);
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #fff;
+            width: 100%;
+            padding: 0.4em 0.8em;
+        }
+
+        .buttons {
+
+            margin-top: 1em;
+            border: 1px solid rgb(64, 64, 246);
+            border-radius: 6px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #153cd9;
+            width: 100%;
+            padding: 0.4em 0.8em;
+        }
+
+        .buttons:hover {
+
+            background-color: rgb(71, 71, 244);
+        }
+
+        #firstbutton:hover
+         {
+            background-color: rgb(21, 14, 212);
+            color: #fff;
+        }
+
+        .parac {
+            text-align: center;
+            font-size: 25px;
+            background-color: rgb(185, 184, 184);
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        .prule {
+            margin-top: -0.7em;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+
+            background:white;
+            padding:20px 20px 20px 10px;
+            display:flex;
+            align-items:center;
+            box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+    
+        }
+
+        .box .slider {
+
+            height:40px;
+            width:300px;
+            display:flex;
+            align-items:center;
+            
+        }
+
+        .box .slider input {
+
+            height:100%;
+            width:100%;
+            outline:none;
+        }
+
+        .box .value {
+
+            font-size: 30px;
+            font-weight:600;
+            font-family:sans-serif;
+            text-align:center;
+            width:55px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="d-flex shadow-sm p-3 bg-body rounded" style="background-color:#333">
+        <div class="p-1 flex-grow-1 mx-1 fs-5">Company name</div>
+        <a class="p-2">Features</a>
+        <a class="p-2">Enterprise</a>
+        <a class="p-2">Support</a>
+        <a class="p-2">Pricing</a>
+        <button type="button" class="btn btn-outline-primary mx-2"
+            style="--bs-btn-padding-y: 0.4rem; --bs-btn-padding-x: 0.8rem; --bs-btn-font-size: 1rem;"> Sign Up </button>
+    </div>
+
+    <div class="min-vh-100 p-4" id="subcontainer">
+
+        <h1 class="text-center align-middle py-4 my-4 display-4">Pricing</h1>
+
+        <p class="text-center align py-4" id="para">Quickly build an effective pricing table for your potential
+            customers with this Bootstrap example. It's built with default Bootstrap components and utilities
+            with little customization.</p>
+
+        <div class="box">
+            <div class="slider">
+                <input type="range" min="0" max="50" value="0" id="slideBar">
+            </div>
+            <div class="value">1000</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card my-4 mx-2 card-container">
+                    <div class="card-body" id="free">
+                        <p class="parac">Free</p>
+                        <hr class="prule">
+                        <h5 class="card-title text-center align"><span class="fs-1">$0 </span class=""><span
+                                class="fs-3 text-secondary" style="color:rgb(152, 149, 149)">/   mo</span></h5>
+                        <div class="text-center align">10 users included</div>
+                        <div class="text-center align">2 GB of storage</div>
+                        <div class="text-center align">Email support</div>
+                        <div class="text-center align">Help center</div>
+                        <button id="firstbutton">Sign up for free</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card my-4 mx-2 card-container">
+                    <div class="card-body" id="standard">
+                        <p class="parac">Standard</p>
+                        <hr class="prule">
+                        <h5 class="card-title text-center align"><span class="fs-1">$15 </span class=""><span
+                                class="fs-3 text-secondary" style="color:rgb(152, 149, 149)">/   mo</span></h5>
+                        <div class="text-center align">20 users included</div>
+                        <div class="text-center align">10 GB of storage</div>
+                        <div class="text-center align">Priority Email Support</div>
+                        <div class="text-center align">Help center access</div>
+                        <button class="buttons">Get started</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card my-4 mx-2 card-container">
+                    <div class="card-body" id="pro">
+                        <p class="parac">Pro</p>
+                        <hr class="prule">
+                        <h5 class="card-title text-center align"><span class="fs-1">$29 </span class=""><span
+                                class="fs-3 text-secondary" style="color:rgb(152, 149, 149)">/   mo</span></h5>
+                        <div class="text-center align">30 users included</div>
+                        <div class="text-center align">15 GB of storage</div>
+                        <div class="text-center align">Phone and email support</div>
+                        <div class="text-center align">Help center access</div>
+                        <button class="buttons">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color:#fff; padding: 2em; height: 56vh;">
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2 mx-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+                        alt="" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">© 2017-2018</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const slider = document.querySelector("#slideBar");
+        const value = document.querySelector(".value");
+        const free = document.getElementById("free");
+        const standard = document.getElementById("standard")
+        const pro = document.getElementById("pro")
+
+        value.textContent = slider.value;
+        slider.oninput = function(){
+
+            value.textContent = this.value;
+
+            free.style.border = "";
+            pro.style.border = "";
+            standard.style.border = "";
+
+            if(this.value>0 && this.value<=10){
+
+                free.style.border="2px solid red";
+            }
+
+            else if(this.value>=10 && this.value<=20){
+
+               
+                standard.style.border="2px solid red";
+            }
+
+            else if(this.value >20) {
+                
+                pro.style.border="2px solid red";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
+

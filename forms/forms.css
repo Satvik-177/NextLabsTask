@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(234, 54, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(71, 244, 209), rgb(240, 69, 200));
+}
+
+#formContainer {
+    height: 95vh;
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#name {
+    height: 9vh;
+    width: 30vw;
+    margin: 2em 4.7em;
+    padding: 1.5em;
+    border-radius: 7px;
+    border: 1px solid rgb(181, 179, 179);
+}
+
+#email {
+    height: 9vh;
+    width: 30vw;
+    margin: 2em 4.7em;
+    padding: 1.5em;
+    border-radius: 7px;
+    border: 1px solid rgb(181, 179, 179);
+}
+
+textarea {
+    margin: 2em 4.4em;
+    padding: 1.5em;
+    border-radius: 7px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0.5em 1em;
+    font-size: 35px;
+}
+
+p {
+    margin-top: 1em;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.box {
+
+    background:#fff;
+    padding:20px 20px 20px 30px;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+}
+
+.box .slider {
+
+    height:40px;
+    width:300px;
+    display:flex;
+    align-items:center;
+}
+
+.box .slider input {
+
+    height:10px;
+    width:100%;
+
+}
+
+.box .value {
+
+    font-weight:600;
+    font-size:30px;
+    font-family: sans-serif;
+    color:#222;
+}
+
+button {
+
+    margin:2em 15em;
+    height:6vh;
+    width:10vw;
+    cursor:pointer;
+    padding:4px;
+    border-radius:5px;
+    border:none;
+    box-shadow:2px 2px 2px 1px grey;
+    background-color: rgb(220, 29, 220);
+    color:#fff;
+    font-size: 15px;
+}
+
+
+@media (max-width: 576px) {
+    #formContainer {
+        width: 90%;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        margin: 1em 0;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+    #formContainer {
+        width: 80%;
+    }
+}
+
+/* Large screens */
+@media (min-width: 769px) and (max-width: 992px) {
+    #formContainer {
+        width: 70%;
+    }
+}
+
+/* Extra-large screens */
+@media (min-width: 990px) {
+    #formContainer {
+        width: 45%;
+    }
+}
