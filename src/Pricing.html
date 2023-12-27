@@ -9,128 +9,9 @@
         rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="boostr2.webp">
-    <script src="index.js"></script>
-    <style>
-        .p-2 {
-            text-decoration: none;
-            color: #222;
-            cursor: pointer;
-        }
+    <link rel="stylesheet" href="Pricing.css">
+    <script src="Pricing.js"></script>
 
-        .p-2:hover {
-            text-decoration: underline;
-        }
-
-        #subcontainer {
-            width: 90%;
-            margin: auto;
-            padding: 2em;
-        }
-
-        #para {
-            text-align: center;
-            font-size: larger;
-            margin-top: 1em;
-        }
-
-        .card-container {
-            height: auto;
-        }
-
-        #firstbutton
-         {
-            margin-top: 1em;
-            border: 1px solid rgb(64, 64, 246);
-            border-radius: 6px;
-            color: rgb(64, 64, 246);
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #fff;
-            width: 100%;
-            padding: 0.4em 0.8em;
-        }
-
-        .buttons {
-
-            margin-top: 1em;
-            border: 1px solid rgb(64, 64, 246);
-            border-radius: 6px;
-            color: #fff;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #153cd9;
-            width: 100%;
-            padding: 0.4em 0.8em;
-        }
-
-        .buttons:hover {
-
-            background-color: rgb(71, 71, 244);
-        }
-
-        #firstbutton:hover
-         {
-            background-color: rgb(21, 14, 212);
-            color: #fff;
-        }
-
-        .parac {
-            text-align: center;
-            font-size: 25px;
-            background-color: rgb(185, 184, 184);
-            padding: 0.5em;
-            margin-bottom: 1em;
-        }
-
-        .prule {
-            margin-top: -0.7em;
-            width: 100%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .box {
-
-            background:white;
-            padding:20px 20px 20px 10px;
-            display:flex;
-            align-items:center;
-            box-shadow:0px 0px 5px rgba(0,0,0,0.1);
-    
-        }
-
-        .box .slider {
-
-            height:40px;
-            width:300px;
-            display:flex;
-            align-items:center;
-            
-        }
-
-        .box .slider input {
-
-            height:100%;
-            width:100%;
-            outline:none;
-        }
-
-        .box .value {
-
-            font-size: 30px;
-            font-weight:600;
-            font-family:sans-serif;
-            text-align:center;
-            width:55px;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -188,7 +69,7 @@
                         <div class="text-center align">10 GB of storage</div>
                         <div class="text-center align">Priority Email Support</div>
                         <div class="text-center align">Help center access</div>
-                        <button class="buttons">Get started</button>
+                        <button class="generalButton">Get started</button>
                     </div>
                 </div>
             </div>
@@ -204,7 +85,7 @@
                         <div class="text-center align">15 GB of storage</div>
                         <div class="text-center align">Phone and email support</div>
                         <div class="text-center align">Help center access</div>
-                        <button class="buttons">Contact us</button>
+                        <button class="generalButton">Contact us</button>
                     </div>
                 </div>
             </div>
@@ -250,45 +131,20 @@
                     </ul>
                 </div>
             </div>
+
+            <div id="infiniteContent">
+            
+            </div>
         </footer>
     </div>
 
-    <script>
-        const slider = document.querySelector("#slideBar");
-        const value = document.querySelector(".value");
-        const free = document.getElementById("free");
-        const standard = document.getElementById("standard")
-        const pro = document.getElementById("pro")
+    <!-- <script>
 
-        value.textContent = slider.value;
-        slider.oninput = function(){
 
-            value.textContent = this.value;
 
-            free.style.border = "";
-            pro.style.border = "";
-            standard.style.border = "";
-
-            if(this.value>0 && this.value<=10){
-
-                free.style.border="2px solid red";
-            }
-
-            else if(this.value>=10 && this.value<=20){
-
-               
-                standard.style.border="2px solid red";
-            }
-
-            else if(this.value >20) {
-                
-                pro.style.border="2px solid red";
-            }
-        }
-
-    </script>
+        
+    </script> -->
 
 </body>
 
 </html>
-

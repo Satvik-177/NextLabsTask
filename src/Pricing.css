@@ -1,0 +1,118 @@
+.p-2 {
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+}
+
+.p-2:hover {
+    text-decoration: underline;
+}
+
+#subcontainer {
+    width: 90%;
+    margin: auto;
+    padding: 2em;
+}
+
+#para {
+    text-align: center;
+    font-size: larger;
+    margin-top: 1em;
+}
+
+.card-container {
+    height: auto;
+}
+
+#firstbutton
+ {
+    margin-top: 1em;
+    border: 1px solid rgb(64, 64, 246);
+    border-radius: 6px;
+    color: rgb(64, 64, 246);
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    width: 100%;
+    padding: 0.4em 0.8em;
+}
+
+.generalButton {
+
+    margin-top: 1em;
+    border: 1px solid rgb(64, 64, 246);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #153cd9;
+    width: 100%;
+    padding: 0.4em 0.8em;
+}
+
+.generalButton:hover {
+
+    background-color: rgb(71, 71, 244);
+}
+
+#firstbutton:hover
+ {
+    background-color: rgb(21, 14, 212);
+    color: #fff;
+}
+
+.parac {
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(185, 184, 184);
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.prule {
+    margin-top: -0.7em;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.box {
+
+    background:white;
+    padding:20px 20px 20px 10px;
+    display:flex;
+    align-items:center;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+
+}
+
+.box .slider {
+
+    height:40px;
+    width:300px;
+    display:flex;
+    align-items:center;
+    
+}
+
+.box .slider input {
+
+    height:100%;
+    width:100%;
+    outline:none;
+}
+
+.box .value {
+
+    font-size: 30px;
+    font-weight:600;
+    font-family:sans-serif;
+    text-align:center;
+    width:55px;
+}
